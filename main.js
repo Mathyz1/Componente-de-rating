@@ -44,3 +44,4 @@ document.querySelectorAll(".item"). forEach(item => {
 })
 
 //puedo agregar que una vez que haga click me diga cuantras estrellas le di, y que quede fijo
+//y que se pueda hace media estrella o cero
