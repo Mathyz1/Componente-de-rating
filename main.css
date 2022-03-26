@@ -1,9 +1,14 @@
+@font-face {
+  font-family: Bronco;
+  src: url(./src/font/Bronco\ Regular.otf);
+}
+
 body {
-  background-color: #1c2605;
+  background-color: #301f41 !important;
 }
 
 .rating {
-  margin-top: 100px;
+  /*margin-top: 5px;*/
   display: flex;
   justify-content: center;
 }
@@ -20,4 +25,94 @@ body {
 
 .item-full {
   background-color: #d9b504;
+}
+
+img {
+  width: 500px;
+  height: 100%;
+}
+
+#restaurant,
+#calificacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2,
+p {
+  color: white;
+  font-family: Bronco;
+  margin-bottom: 5px;
+}
+h2 {
+  margin-top: 10px;
+  font-size: 50px !important;
+  letter-spacing: 1px;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 36px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-family: Bronco;
+  font-size: 36px !important;
+  color: white;
+  margin-left: 20px;
+}
+.promedio {
+  position: relative;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.prom-left {
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-rows: auto 25% auto;
+  margin: 10px;
+}
+.prom-right {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 95%;
+  align-items: center;
+  margin: 10px;
+  /*flex-direction: column;*/
+}
+
+.prom,
+.votos,
+.prom-right span {
+  color: white;
+  /*font-size: 22px;*/
+}
+.prom {
+  grid-row: 1 / span 1;
+  font-size: 50px;
+  text-align: center;
+}
+.votos {
+  grid-row: 3 / span 1;
+  text-align: center;
+}
+
+.progress {
+  width: 100%;
+}
+/*.progress-bar {
+  width: 100%;
+}*/
+
+@media screen and (max-width: 700px) {
+  img {
+    width: 300px;
+    height: 100%;
+  }
 }
